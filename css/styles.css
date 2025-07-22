@@ -17,6 +17,8 @@ a {
 
 img {
     max-width:100% ;
+    display: block;
+    border-radius: 5px;
 }
 
 /* GRID GERAL */
@@ -68,22 +70,56 @@ img {
     margin-left: 30px;
 }
 
-
-
-
+/* SIDENAV */
 
 .sidenav {
     grid-area: sidenav;
+    background: #fafcfb;
+    padding: 30px; 
 }
+
+.sidenav li a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(4, 4, 4, 0.15);
+    transition: .1s ease-out;
+}
+
+.sidenav li a:hover {
+    background: #B07dfb;
+}
+
+/* CONTENT */
 
 .content {
     grid-area: content;
 }   
 
+/* ANUNCIOS */
+
 .anuncios {
     grid-area: anuncios;
+    background: #fafcfb;
+    display: grid;
+    align-content: start;
+    padding: 30px;
+    grid-gap: 30px;
 }
+
+/* FOOTER */
 
 .footer {
     grid-area: footer;
+    background: linear-gradient(135deg, #8844ee, #B07dfb);
+}
+
+.footer p {
+    color: white;
+    padding: 30px;
+    text-align: center;
 }
